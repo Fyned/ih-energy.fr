@@ -26,3 +26,11 @@ dist-ssr
 # Claude temp files
 .claude
 tmpclaude-*
+
+# Dokumantasyon dosyalari (repo'da gorunmeyecek)
+*.md
+!README.md
+
+# Kilavuz dosyalari
+IH-ENERGY*.md
+IH-ENERGY*.MD
