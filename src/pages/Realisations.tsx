@@ -1,11 +1,19 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { MapPin, Calendar } from 'lucide-react'
+import { MapPin, Calendar, Home, Building2, DoorOpen, Flame, Wind } from 'lucide-react'
 import { SEO } from '@/components/seo'
 import { Container } from '@/components/common'
 import { Hero, CTASection } from '@/components/sections'
 import { realisations, categories } from '@/data/realisations'
 import { cn } from '@/utils/cn'
+
+const categoryIcons: Record<string, React.ElementType> = {
+  ITE: Home,
+  Ravalement: Building2,
+  Menuiserie: DoorOpen,
+  Chauffage: Flame,
+  VMC: Wind,
+}
 
 export function Realisations() {
   const [activeCategory, setActiveCategory] = useState('all')
@@ -60,10 +68,14 @@ export function Realisations() {
                 transition={{ delay: index * 0.1 }}
                 className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow border border-neutral-100"
               >
-                {/* Image Placeholder */}
-                <div className="aspect-[4/3] bg-neutral-100 relative overflow-hidden">
-                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-accent/10 to-primary/10">
-                    <span className="text-neutral-400 text-sm">Photo à venir</span>
+                {/* Image Placeholder with Icon */}
+                <div className="aspect-[4/3] bg-gradient-to-br from-accent/20 to-primary/20 relative overflow-hidden">
+                  <div className="absolute inset-0 flex flex-col items-center justify-center">
+                    {(() => {
+                      const IconComponent = categoryIcons[project.category] || Home
+                      return <IconComponent className="w-16 h-16 text-accent/50 mb-2" />
+                    })()}
+                    <span className="text-neutral-500 text-xs">Photo à venir</span>
                   </div>
                   <span className="absolute top-4 left-4 px-3 py-1 bg-accent text-white text-xs font-medium rounded-full">
                     {project.category}

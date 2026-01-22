@@ -1,9 +1,17 @@
 import { motion } from 'framer-motion'
-import { Calendar, ArrowRight } from 'lucide-react'
+import { Calendar, ArrowRight, FileText, Home, Building2, DoorOpen, Scale, Euro } from 'lucide-react'
 import { SEO } from '@/components/seo'
 import { Container, SectionHeading, Card } from '@/components/common'
 import { Hero } from '@/components/sections'
 import { articles } from '@/data/articles'
+
+const categoryIcons: Record<string, React.ElementType> = {
+  Aides: Euro,
+  Isolation: Home,
+  Façade: Building2,
+  Menuiserie: DoorOpen,
+  Réglementation: Scale,
+}
 
 function formatDate(dateString: string) {
   return new Date(dateString).toLocaleDateString('fr-FR', {
@@ -50,18 +58,15 @@ export function ActualitesIndex() {
                   className="h-full group"
                   padding="none"
                 >
-                  {/* Article Image */}
-                  {article.image ? (
-                    <div className="aspect-video overflow-hidden rounded-t-2xl">
-                      <img
-                        src={article.image}
-                        alt={article.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
+                  {/* Article Image or Placeholder */}
+                  <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/10 rounded-t-2xl overflow-hidden relative">
+                    <div className="absolute inset-0 flex flex-col items-center justify-center">
+                      {(() => {
+                        const IconComponent = categoryIcons[article.category] || FileText
+                        return <IconComponent className="w-12 h-12 text-accent/40" />
+                      })()}
                     </div>
-                  ) : (
-                    <div className="aspect-video bg-gradient-to-br from-accent/20 to-accent/5 rounded-t-2xl" />
-                  )}
+                  </div>
 
                   <div className="p-6">
                     {/* Category Badge */}
