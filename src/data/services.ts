@@ -169,75 +169,217 @@ Toutes nos installations sont réalisées par des techniciens certifiés QualiPA
     image: '/images/services/chauffage.webp',
   },
   {
-    id: 'photovoltaique',
-    slug: 'photovoltaique',
-    title: 'Panneau photovoltaïque',
-    shortTitle: 'Photovoltaïque',
-    description: 'Produisez votre propre électricité et réduisez votre dépendance au réseau. Nos installations solaires vous garantissent une énergie propre et des économies durables sur vos factures.',
-    longDescription: `L'énergie solaire photovoltaïque est aujourd'hui l'investissement le plus rentable pour réduire durablement vos factures d'électricité. En produisant votre propre énergie, vous vous protégez contre les hausses tarifaires tout en contribuant à la transition énergétique.
+    id: 'isolation-exterieur',
+    slug: 'isolation-thermique-exterieur',
+    title: 'Isolation thermique par l\'extérieur',
+    shortTitle: 'ITE',
+    description: 'L\'isolation par l\'extérieur (ITE) enveloppe votre maison d\'un manteau isolant performant. Supprimez les ponts thermiques et transformez l\'aspect de votre façade en une seule intervention.',
+    longDescription: `L'isolation thermique par l'extérieur (ITE) est la technique la plus efficace pour améliorer la performance énergétique de votre habitation. En enveloppant les murs extérieurs d'un isolant recouvert d'un enduit de finition, vous supprimez les ponts thermiques et conservez l'inertie thermique de vos murs.
 
-ISO Home Energy conçoit et installe des centrales photovoltaïques adaptées à votre toiture et à votre consommation. Nous privilégions l'autoconsommation avec vente du surplus : vous utilisez l'électricité produite en journée et revendez l'excédent à EDF OA.
+Cette solution présente un double avantage : elle améliore considérablement l'isolation de votre logement tout en rénovant l'aspect extérieur de votre façade. Vous gagnez en confort, réduisez vos factures d'énergie et valorisez votre patrimoine.
 
-Nos installations comprennent des panneaux haute performance, un onduleur de dernière génération et un système de monitoring pour suivre votre production en temps réel.`,
-    icon: 'sun',
+ISO Home Energy réalise des ITE complètes avec des matériaux certifiés : polystyrène expansé, laine de roche ou fibre de bois selon vos préférences et les contraintes techniques de votre bâtiment.`,
+    icon: 'home',
     features: [
-      'Panneaux photovoltaïques monocristallins haut rendement',
-      'Onduleurs et micro-onduleurs de dernière génération',
-      'Système de monitoring et suivi de production en temps réel',
-      'Installation en surimposition ou intégration au bâti',
-      'Batterie de stockage pour optimiser l\'autoconsommation',
-      'Raccordement au réseau et contrat EDF OA',
+      'Isolation en polystyrène expansé (PSE) haute densité',
+      'Isolation en laine de roche pour une meilleure résistance au feu',
+      'Isolation en fibre de bois pour une approche écologique',
+      'Enduits de finition variés (gratté, taloché, ribbé)',
+      'Traitement des points singuliers (fenêtres, angles, soubassements)',
+      'Pose de profilés de départ, d\'angle et de finition',
     ],
     benefits: [
-      'Production d\'électricité gratuite pendant 25 ans minimum',
-      'Revenu complémentaire grâce à la vente du surplus',
-      'Protection contre les hausses du prix de l\'électricité',
-      'Valorisation du bien immobilier',
-      'Réduction de l\'empreinte carbone',
-      'Indépendance énergétique accrue',
+      'Suppression totale des ponts thermiques',
+      'Économies de chauffage de 25 à 40%',
+      'Rénovation esthétique de la façade',
+      'Conservation de la surface habitable intérieure',
+      'Amélioration du confort été comme hiver',
+      'Valorisation importante du bien immobilier',
     ],
     process: [
       {
         step: 1,
-        title: 'Étude de faisabilité',
-        description: 'Analyse de votre toiture (orientation, inclinaison, ombrage) et de votre consommation.',
+        title: 'Diagnostic façade',
+        description: 'Analyse de l\'état du support, mesures et choix de la solution technique adaptée.',
       },
       {
         step: 2,
-        title: 'Dimensionnement et devis',
-        description: 'Calcul de la puissance optimale et estimation de la production annuelle.',
+        title: 'Devis et aides',
+        description: 'Chiffrage détaillé avec simulation des aides MaPrimeRénov\' et CEE.',
       },
       {
         step: 3,
-        title: 'Démarches administratives',
-        description: 'Déclaration en mairie, demande de raccordement Enedis et contrat EDF OA.',
+        title: 'Travaux d\'ITE',
+        description: 'Pose de l\'isolant, marouflage, couche de base armée et enduit de finition.',
       },
       {
         step: 4,
-        title: 'Installation et mise en service',
-        description: 'Pose des panneaux, raccordement électrique et validation Consuel.',
+        title: 'Finitions et réception',
+        description: 'Traitement des détails, nettoyage et remise des documents de garantie.',
       },
     ],
     faq: [
       {
-        question: 'Quelle surface de toiture faut-il pour installer des panneaux ?',
-        answer: 'Comptez environ 18 m² de toiture pour une installation de 3 kWc (6-8 panneaux), qui couvre les besoins d\'un foyer de 4 personnes. Nous adaptons la puissance à votre surface disponible.',
+        question: 'Quelle épaisseur d\'isolant pour une ITE ?',
+        answer: 'L\'épaisseur varie selon la performance souhaitée et les contraintes (débords de toit, limites de propriété). Généralement, on pose 12 à 18 cm d\'isolant pour atteindre une résistance thermique R ≥ 3,7 m².K/W, exigée pour les aides.',
       },
       {
-        question: 'Combien rapporte une installation photovoltaïque ?',
-        answer: 'Une installation de 3 kWc produit environ 3 500 kWh/an en France, soit une économie de 700 à 900 € par an. Le retour sur investissement se situe entre 8 et 12 ans selon les aides obtenues.',
+        question: 'L\'ITE nécessite-t-elle une autorisation ?',
+        answer: 'Oui, une déclaration préalable de travaux est obligatoire car l\'ITE modifie l\'aspect extérieur du bâtiment. Dans certaines zones protégées, un permis de construire peut être requis.',
       },
       {
-        question: 'Les panneaux fonctionnent-ils par temps nuageux ?',
-        answer: 'Oui, les panneaux produisent même par temps couvert, mais avec un rendement réduit (10 à 25% de la production nominale). La production annuelle tient compte de toutes les conditions météo.',
+        question: 'Combien de temps durent les travaux d\'ITE ?',
+        answer: 'Pour une maison individuelle, comptez 2 à 4 semaines selon la surface et la complexité (nombre d\'ouvertures, étages). Les travaux se font par l\'extérieur sans perturber votre quotidien.',
       },
     ],
     seo: {
-      title: 'Panneau photovoltaïque | Installation solaire en autoconsommation',
-      description: 'Installation de panneaux solaires photovoltaïques par des professionnels certifiés. Autoconsommation et vente du surplus. Prime à l\'autoconsommation et TVA réduite. Devis gratuit.',
-      keywords: ['panneau solaire', 'photovoltaïque', 'autoconsommation', 'installation solaire', 'énergie solaire', 'EDF OA', 'prime autoconsommation'],
+      title: 'Isolation thermique par l\'extérieur (ITE) | Façade isolée Grand Est',
+      description: 'Spécialiste de l\'isolation par l\'extérieur dans le Grand Est. ITE en PSE, laine de roche ou fibre de bois. Artisans RGE certifiés. Aides MaPrimeRénov\' et CEE déduites. Devis gratuit.',
+      keywords: ['isolation extérieure', 'ITE', 'isolation façade', 'isolation thermique extérieur', 'ravalement isolant', 'enduit isolant', 'artisan RGE'],
     },
-    image: '/images/services/photovoltaique.webp',
+    image: '/images/services/ite.webp',
+  },
+  {
+    id: 'ravalement-facade',
+    slug: 'ravalement-facade',
+    title: 'Ravalement de façade',
+    shortTitle: 'Ravalement',
+    description: 'Redonnez vie à vos façades avec un ravalement professionnel. Nettoyage, réparation des fissures et application d\'un nouvel enduit pour protéger et embellir durablement votre habitat.',
+    longDescription: `Le ravalement de façade est une opération essentielle pour préserver et valoriser votre patrimoine immobilier. Au-delà de l'aspect esthétique, il protège vos murs contre les infiltrations d'eau et les dégradations liées aux intempéries.
+
+ISO Home Energy réalise des ravalements complets, du diagnostic initial à la finition. Nos façadiers qualifiés maîtrisent toutes les techniques : nettoyage haute pression, traitement des fissures, application d'enduits traditionnels ou modernes, peinture de façade.
+
+Nous intervenons sur tous types de supports : enduit ciment, crépi, pierre, brique, béton. Chaque chantier fait l'objet d'une étude préalable pour choisir les produits les mieux adaptés à votre façade.`,
+    icon: 'building2',
+    features: [
+      'Nettoyage haute pression et traitement anti-mousse',
+      'Réparation des fissures et micro-fissures',
+      'Rebouchage et ragréage des zones dégradées',
+      'Application d\'enduits monocouches ou traditionnels',
+      'Peinture de façade avec fixateur et finition',
+      'Traitement hydrofuge pour une protection durable',
+    ],
+    benefits: [
+      'Protection durable contre les intempéries',
+      'Amélioration de l\'aspect esthétique',
+      'Prévention des infiltrations d\'eau',
+      'Valorisation du bien immobilier',
+      'Mise en conformité avec les obligations légales',
+      'Possibilité de combiner avec une ITE',
+    ],
+    process: [
+      {
+        step: 1,
+        title: 'Diagnostic façade',
+        description: 'Inspection complète pour identifier les pathologies et définir les travaux nécessaires.',
+      },
+      {
+        step: 2,
+        title: 'Devis détaillé',
+        description: 'Proposition technique et financière avec planning d\'intervention.',
+      },
+      {
+        step: 3,
+        title: 'Préparation et travaux',
+        description: 'Installation de l\'échafaudage, nettoyage, réparations et application des revêtements.',
+      },
+      {
+        step: 4,
+        title: 'Réception des travaux',
+        description: 'Contrôle qualité final et remise du procès-verbal de réception.',
+      },
+    ],
+    faq: [
+      {
+        question: 'Le ravalement de façade est-il obligatoire ?',
+        answer: 'Oui, dans de nombreuses communes, le ravalement est obligatoire tous les 10 ans. Des arrêtés municipaux peuvent imposer des travaux. Renseignez-vous auprès de votre mairie.',
+      },
+      {
+        question: 'Quelle est la durée de vie d\'un ravalement ?',
+        answer: 'Un ravalement bien réalisé avec des produits de qualité dure 15 à 20 ans. L\'application d\'un traitement hydrofuge prolonge encore cette durée en protégeant la façade.',
+      },
+      {
+        question: 'Peut-on faire un ravalement en hiver ?',
+        answer: 'Les travaux de ravalement nécessitent des températures supérieures à 5°C et un temps sec. Nous planifions les chantiers en fonction des conditions météorologiques optimales.',
+      },
+    ],
+    seo: {
+      title: 'Ravalement de façade | Rénovation et nettoyage façade Grand Est',
+      description: 'Entreprise de ravalement de façade dans le Grand Est. Nettoyage, réparation, enduit et peinture. Artisans qualifiés. Devis gratuit sous 48h.',
+      keywords: ['ravalement façade', 'rénovation façade', 'nettoyage façade', 'enduit façade', 'peinture façade', 'crépi', 'façadier'],
+    },
+    image: '/images/services/ravalement.webp',
+  },
+  {
+    id: 'menuiserie',
+    slug: 'menuiserie',
+    title: 'Menuiserie',
+    shortTitle: 'Menuiserie',
+    description: 'Fenêtres, portes et volets performants pour une isolation optimale. Nos menuiseries PVC, aluminium ou bois allient esthétique, sécurité et économies d\'énergie.',
+    longDescription: `Les menuiseries représentent un poste clé de la performance énergétique de votre logement. Des fenêtres anciennes ou mal isolées peuvent être responsables de 10 à 15% des déperditions thermiques. Leur remplacement améliore significativement votre confort et réduit vos factures de chauffage.
+
+ISO Home Energy vous propose une gamme complète de menuiseries haute performance : fenêtres et portes-fenêtres en PVC, aluminium ou bois, portes d'entrée sécurisées, volets roulants isolés. Tous nos produits sont certifiés et répondent aux exigences des aides à la rénovation.
+
+Nos poseurs expérimentés assurent une installation soignée, garante de l'étanchéité à l'air et à l'eau. Chaque chantier fait l'objet d'une attention particulière aux finitions pour un résultat impeccable.`,
+    icon: 'doorOpen',
+    features: [
+      'Fenêtres et portes-fenêtres PVC, alu ou bois',
+      'Double ou triple vitrage à isolation renforcée',
+      'Portes d\'entrée sécurisées et isolantes',
+      'Volets roulants manuels ou motorisés',
+      'Portes de garage sectionnelles ou enroulables',
+      'Stores et protections solaires',
+    ],
+    benefits: [
+      'Réduction des déperditions thermiques de 10 à 15%',
+      'Amélioration de l\'isolation acoustique',
+      'Renforcement de la sécurité du logement',
+      'Modernisation de l\'esthétique de la maison',
+      'Facilité d\'entretien (PVC et aluminium)',
+      'Éligibilité aux aides MaPrimeRénov\' et CEE',
+    ],
+    process: [
+      {
+        step: 1,
+        title: 'Prise de mesures',
+        description: 'Relevé précis des dimensions et analyse des contraintes techniques.',
+      },
+      {
+        step: 2,
+        title: 'Choix des produits',
+        description: 'Sélection des menuiseries selon vos besoins, budget et style architectural.',
+      },
+      {
+        step: 3,
+        title: 'Fabrication',
+        description: 'Production sur mesure des menuiseries dans nos ateliers partenaires.',
+      },
+      {
+        step: 4,
+        title: 'Pose et finitions',
+        description: 'Installation par nos menuisiers, réglages et nettoyage du chantier.',
+      },
+    ],
+    faq: [
+      {
+        question: 'PVC, alu ou bois : quel matériau choisir ?',
+        answer: 'Le PVC offre le meilleur rapport qualité/prix et un entretien minimal. L\'aluminium permet des profilés plus fins et des teintes variées. Le bois apporte chaleur et authenticité mais nécessite un entretien régulier.',
+      },
+      {
+        question: 'Double ou triple vitrage ?',
+        answer: 'Le double vitrage suffit dans la plupart des cas. Le triple vitrage est recommandé en zone très froide ou pour une maison passive. Nous vous conseillons selon votre situation géographique et vos objectifs.',
+      },
+      {
+        question: 'Les menuiseries sont-elles éligibles aux aides ?',
+        answer: 'Oui, le remplacement de fenêtres simple vitrage par du double vitrage performant est éligible à MaPrimeRénov\' et aux CEE, sous conditions de performance (Uw ≤ 1,3 W/m².K).',
+      },
+    ],
+    seo: {
+      title: 'Menuiserie | Fenêtres, portes et volets performants Grand Est',
+      description: 'Installation de menuiseries PVC, alu et bois dans le Grand Est. Fenêtres, portes, volets roulants. Double et triple vitrage. Artisans certifiés RGE. Aides déduites.',
+      keywords: ['menuiserie', 'fenêtres PVC', 'fenêtres alu', 'portes', 'volets roulants', 'double vitrage', 'triple vitrage', 'remplacement fenêtres'],
+    },
+    image: '/images/services/menuiserie.webp',
   },
   {
     id: 'chauffe-eau',

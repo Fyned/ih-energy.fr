@@ -19,416 +19,347 @@ export interface Article {
 export const articles: Article[] = [
   {
     id: '1',
-    slug: 'nouvelles-aides-2024',
-    title: 'Les nouvelles aides à la rénovation énergétique en 2024',
+    slug: 'aides-renovation-2025',
+    title: 'Les aides à la rénovation énergétique en 2025 : ce qui change',
     excerpt:
-      'Découvrez les évolutions des dispositifs MaPrimeRénov\' et des primes CEE pour cette année.',
-    content: `L'année 2024 marque un tournant important dans le paysage des aides à la rénovation énergétique en France. Le gouvernement a annoncé plusieurs modifications significatives aux dispositifs existants, avec pour objectif d'accélérer la transition énergétique des logements français.
+      'Découvrez les évolutions des dispositifs MaPrimeRénov\' et des primes CEE pour 2025.',
+    content: `L'année 2025 apporte son lot de nouveautés dans le paysage des aides à la rénovation énergétique. Le gouvernement ajuste les dispositifs pour accélérer la transition énergétique du parc immobilier français.
 
-## MaPrimeRénov' : des évolutions majeures
+## MaPrimeRénov' : les évolutions 2025
 
-Le dispositif phare de l'État connaît plusieurs ajustements en 2024. Les plafonds de revenus ont été réévalués pour tenir compte de l'inflation, permettant à davantage de ménages d'accéder aux tranches les plus avantageuses. Les montants des primes pour certains travaux, notamment l'installation de pompes à chaleur, ont été revus à la hausse.
+Le dispositif phare connaît plusieurs ajustements significatifs cette année. Les plafonds de revenus ont été réévalués pour permettre à davantage de ménages d'accéder aux tranches les plus avantageuses.
 
-Une nouveauté importante : la création du parcours "rénovation d'ampleur" qui encourage les rénovations globales plutôt que les travaux isolés. Ce parcours permet d'obtenir des aides bonifiées lorsque plusieurs postes de travaux sont réalisés simultanément, avec un objectif de gain énergétique d'au moins deux classes sur le DPE.
+Le parcours "rénovation d'ampleur" est désormais privilégié par le gouvernement. Ce parcours encourage les rénovations globales avec un objectif de gain d'au moins deux classes sur le DPE. Les bonus peuvent atteindre jusqu'à 90% du coût des travaux pour les ménages les plus modestes.
+
+### Les montants pour les travaux courants :
+- **Isolation des murs par l'extérieur** : jusqu'à 75 €/m²
+- **Isolation des combles** : jusqu'à 25 €/m²
+- **Pompe à chaleur air-eau** : jusqu'à 5 000 €
+- **Menuiseries** : jusqu'à 100 € par fenêtre
 
 ## Prime CEE : stabilité et simplification
 
-Les Certificats d'Économies d'Énergie (CEE) restent un pilier du financement de la rénovation énergétique. En 2024, le dispositif se stabilise après plusieurs années d'ajustements. Les montants des primes sont globalement maintenus, avec une légère hausse pour certains travaux d'isolation.
+Les Certificats d'Économies d'Énergie restent un pilier du financement. En 2025, les montants sont globalement maintenus avec une légère hausse pour l'isolation thermique par l'extérieur.
 
-La grande nouveauté réside dans la simplification des démarches administratives. Les délais de versement ont été raccourcis et les procédures allégées pour faciliter l'accès aux aides.
+La grande nouveauté : la simplification des démarches. Les délais de versement sont raccourcis et les procédures allégées.
 
 ## Comment maximiser vos aides ?
 
-Pour bénéficier du maximum d'aides en 2024, plusieurs stratégies s'offrent à vous :
-
-1. **Privilégiez les rénovations globales** : Le parcours rénovation d'ampleur offre des bonus significatifs
-2. **Anticipez vos travaux** : Certaines aides sont soumises à des enveloppes budgétaires limitées
-3. **Faites appel à un professionnel RGE** : Condition indispensable pour la plupart des aides
-4. **Cumulez les dispositifs** : MaPrimeRénov' + CEE + TVA réduite + Éco-PTZ
+1. **Privilégiez les rénovations globales** : Le parcours ampleur offre des bonus significatifs
+2. **Faites appel à un professionnel RGE** : Condition indispensable pour les aides
+3. **Cumulez les dispositifs** : MaPrimeRénov' + CEE + TVA réduite + Éco-PTZ
 
 ## ISO Home Energy vous accompagne
 
-Notre équipe se tient informée en permanence des évolutions réglementaires pour vous proposer les solutions les plus avantageuses. Nous réalisons gratuitement la simulation de vos aides et nous occupons de l'ensemble des démarches administratives.
+Notre équipe se tient informée des évolutions réglementaires pour vous proposer les solutions les plus avantageuses. Nous réalisons gratuitement la simulation de vos aides et nous occupons des démarches administratives.
 
-Contactez-nous pour une étude personnalisée de votre projet et découvrez le montant des aides auxquelles vous avez droit.`,
-    date: '2024-01-15',
+Contactez-nous pour une étude personnalisée de votre projet.`,
+    date: '2025-01-15',
     category: 'Aides',
     author: 'ISO Home Energy',
     readTime: '5 min',
-    image: '/images/blog/aides-2024.webp',
+    image: '/images/blog/aides-2025.webp',
     seo: {
-      title: 'Nouvelles aides rénovation énergétique 2024 | MaPrimeRénov\' CEE',
+      title: 'Aides rénovation énergétique 2025 | MaPrimeRénov\' CEE Grand Est',
       description:
-        'Découvrez les évolutions des aides à la rénovation énergétique en 2024 : MaPrimeRénov\', Prime CEE, rénovation d\'ampleur. Tous les changements expliqués.',
+        'Découvrez les aides à la rénovation énergétique en 2025 : MaPrimeRénov\', Prime CEE, rénovation d\'ampleur. Tous les changements expliqués.',
       keywords: [
-        'aides rénovation 2024',
-        'MaPrimeRénov 2024',
-        'prime CEE 2024',
-        'rénovation énergétique',
+        'aides rénovation 2025',
+        'MaPrimeRénov 2025',
+        'prime CEE 2025',
+        'rénovation énergétique Grand Est',
       ],
     },
   },
   {
     id: '2',
-    slug: 'pompe-a-chaleur-guide',
-    title: 'Pompe à chaleur : le guide complet pour bien choisir',
+    slug: 'isolation-thermique-exterieur-guide',
+    title: 'Isolation thermique par l\'extérieur (ITE) : le guide complet',
     excerpt:
-      'Air-eau, air-air, géothermique... Quel type de PAC pour votre logement ? Nos conseils.',
-    content: `La pompe à chaleur (PAC) s'impose aujourd'hui comme la solution de chauffage la plus performante et la plus économique sur le long terme. Mais face à la diversité des modèles disponibles, comment faire le bon choix ? Ce guide vous aide à y voir plus clair.
+      'L\'ITE est la technique la plus performante pour isoler votre maison. Découvrez ses avantages.',
+    content: `L'isolation thermique par l'extérieur (ITE) s'impose comme la solution la plus efficace pour améliorer la performance énergétique de votre habitation. En enveloppant vos murs d'un manteau isolant, vous supprimez les ponts thermiques et transformez l'aspect de votre façade.
 
-## Les différents types de pompes à chaleur
+## Qu'est-ce que l'ITE ?
 
-### Pompe à chaleur air-eau
+L'ITE consiste à poser un isolant sur la face extérieure des murs, recouvert d'un enduit de finition ou d'un bardage. Contrairement à l'isolation par l'intérieur, cette technique préserve la surface habitable et l'inertie thermique des murs.
 
-C'est le modèle le plus répandu en France. La PAC air-eau capte les calories présentes dans l'air extérieur pour chauffer l'eau du circuit de chauffage central. Elle peut alimenter des radiateurs ou un plancher chauffant.
+## Les avantages de l'ITE
 
-**Avantages :**
-- Compatible avec un système de chauffage existant
-- Peut produire l'eau chaude sanitaire
-- Bon rendement même par temps froid
-- Éligible à toutes les aides
+### Performance thermique optimale
+L'ITE supprime tous les ponts thermiques au niveau des planchers et des cloisons. Le résultat : une isolation continue et homogène sur toute l'enveloppe du bâtiment.
 
-**Inconvénients :**
-- Nécessite un espace extérieur pour l'unité
-- Bruit de fonctionnement (à considérer pour le voisinage)
+### Rénovation esthétique
+En plus d'isoler, l'ITE offre l'opportunité de ravaler votre façade. Large choix de finitions : enduits grattés, talochés, ribbés, ou bardage bois/composite.
 
-### Pompe à chaleur air-air
+### Confort été comme hiver
+Les murs conservent leur masse thermique, régulant naturellement la température intérieure. Fini les murs froids en hiver et la surchauffe en été.
 
-Aussi appelée climatisation réversible, la PAC air-air diffuse directement l'air chaud (ou froid en été) dans les pièces via des unités murales.
+### Pas de perte de surface habitable
+L'isolation se fait par l'extérieur, vous conservez 100% de votre surface intérieure.
 
-**Avantages :**
-- Installation simple et rapide
-- Fonction climatisation en été
-- Coût d'achat plus accessible
+## Les techniques d'ITE
 
-**Inconvénients :**
-- Ne produit pas d'eau chaude sanitaire
-- Aides financières limitées
-- Confort moindre qu'un chauffage central
+### ITE sous enduit
+La plus répandue. L'isolant (PSE, laine de roche ou fibre de bois) est collé et/ou fixé mécaniquement sur le mur, puis recouvert d'un enduit armé et d'une finition.
 
-### Pompe à chaleur géothermique
+### ITE sous bardage
+L'isolant est posé dans une ossature, recouverte d'un bardage ventilé (bois, composite, métal). Solution idéale pour les bâtiments irréguliers.
 
-La PAC géothermique puise la chaleur dans le sol, offrant un rendement exceptionnel et constant toute l'année.
+## Les aides financières
 
-**Avantages :**
-- Meilleur rendement (COP jusqu'à 5)
-- Silencieuse (pas d'unité extérieure visible)
-- Performance stable quelle que soit la température
+L'ITE bénéficie d'aides substantielles :
+- **MaPrimeRénov'** : jusqu'à 75 €/m²
+- **Prime CEE** : jusqu'à 12 €/m²
+- **TVA réduite** : 5,5%
+- **Éco-PTZ** : jusqu'à 50 000 €
 
-**Inconvénients :**
-- Coût d'installation élevé
-- Travaux de terrassement importants
-- Nécessite un terrain adapté
-
-## Comment choisir la bonne puissance ?
-
-Le dimensionnement de votre pompe à chaleur est crucial. Une PAC sous-dimensionnée ne parviendra pas à chauffer correctement votre logement, tandis qu'une PAC surdimensionnée engendrera une surconsommation et une usure prématurée.
-
-Le calcul prend en compte :
-- La surface à chauffer
-- L'isolation du logement
-- La zone climatique
-- Vos habitudes de chauffage
-
-Seule une étude thermique réalisée par un professionnel permet de déterminer la puissance optimale.
-
-## Les aides financières disponibles
-
-L'installation d'une pompe à chaleur bénéficie d'aides substantielles :
-
-- **MaPrimeRénov'** : jusqu'à 5 000 € selon revenus
-- **Prime CEE** : jusqu'à 4 000 € selon zone et revenus
-- **TVA réduite** : 5,5% au lieu de 20%
-- **Éco-PTZ** : financement à taux zéro
-
-Au total, les aides peuvent couvrir 50 à 75% du coût de l'installation.
+Au total, les aides peuvent couvrir 50 à 75% du coût des travaux.
 
 ## L'expertise ISO Home Energy
 
-Nos conseillers vous accompagnent dans le choix de la pompe à chaleur adaptée à votre situation. Nous réalisons une étude thermique complète et vous proposons un devis détaillé avec le montant exact des aides déduites.
-
-Tous nos artisans sont certifiés RGE et nos installations bénéficient de la garantie décennale.`,
-    date: '2024-01-10',
-    category: 'Conseils',
+Nos façadiers qualifiés réalisent des ITE de qualité depuis plus de 10 ans dans le Grand Est. Nous maîtrisons toutes les techniques et tous les types d'isolants. Chaque chantier fait l'objet d'une étude personnalisée pour vous proposer la solution optimale.`,
+    date: '2025-01-10',
+    category: 'Isolation',
     author: 'ISO Home Energy',
-    readTime: '7 min',
-    image: '/images/blog/pompe-chaleur-guide.webp',
+    readTime: '6 min',
+    image: '/images/blog/ite-guide.webp',
     seo: {
-      title: 'Guide pompe à chaleur 2024 | Air-eau, air-air, géothermique',
+      title: 'Isolation thermique par l\'extérieur (ITE) | Guide complet 2025',
       description:
-        'Comment choisir sa pompe à chaleur ? Comparatif air-eau, air-air, géothermique. Avantages, inconvénients, prix et aides. Guide complet.',
+        'Tout savoir sur l\'ITE : techniques, avantages, prix et aides. L\'isolation par l\'extérieur pour une maison performante.',
       keywords: [
-        'pompe à chaleur',
-        'PAC air eau',
-        'PAC air air',
-        'chauffage économique',
-        'guide PAC',
+        'isolation thermique extérieur',
+        'ITE',
+        'isolation façade',
+        'enduit isolant',
+        'ravalement isolant',
       ],
     },
   },
   {
     id: '3',
-    slug: 'isolation-combles-economies',
-    title: 'Isolation des combles : jusqu\'à 30% d\'économies sur votre facture',
+    slug: 'ravalement-facade-quand-comment',
+    title: 'Ravalement de façade : quand et comment le réaliser ?',
     excerpt:
-      'L\'isolation des combles est le geste le plus efficace pour réduire vos dépenses énergétiques.',
-    content: `L'isolation des combles représente le premier poste de déperdition thermique d'une maison. Jusqu'à 30% de la chaleur s'échappe par le toit lorsque les combles sont mal isolés. C'est pourquoi ce chantier est considéré comme prioritaire par les experts en rénovation énergétique.
+      'Le ravalement est une obligation légale dans de nombreuses communes. Tout ce qu\'il faut savoir.',
+    content: `Le ravalement de façade est une opération essentielle pour préserver et valoriser votre patrimoine immobilier. Au-delà de l'aspect esthétique, il protège vos murs contre les intempéries et peut même devenir une opportunité d'améliorer l'isolation de votre maison.
 
-## Pourquoi isoler ses combles en priorité ?
+## Pourquoi ravaler sa façade ?
 
-La chaleur monte naturellement et s'accumule sous la toiture. Sans isolation performante, cette chaleur traverse le plafond et se dissipe vers l'extérieur. En hiver, votre chauffage fonctionne en permanence sans jamais atteindre une température confortable. En été, la chaleur du soleil pénètre et transforme vos pièces en étuve.
+### Protection du bâti
+Les façades sont exposées aux agressions climatiques : pluie, gel, UV, pollution. Sans entretien, les micro-fissures s'agrandissent, l'eau s'infiltre et les dégâts s'aggravent.
 
-Une bonne isolation des combles permet de :
-- Réduire votre facture de chauffage de 25 à 30%
-- Améliorer votre confort été comme hiver
-- Valoriser votre bien immobilier
-- Réduire votre empreinte carbone
+### Obligation légale
+Dans de nombreuses communes, le ravalement est obligatoire tous les 10 ans. Des arrêtés municipaux peuvent imposer des travaux si votre façade est dégradée.
 
-## Combles perdus ou combles aménagés ?
+### Valorisation du bien
+Une façade propre et en bon état augmente la valeur de votre bien et facilite sa vente ou sa location.
 
-### Isolation des combles perdus
+## Les étapes d'un ravalement réussi
 
-Les combles perdus sont les espaces sous toiture non habitables (hauteur insuffisante, charpente encombrante). L'isolation se réalise au niveau du plancher, par soufflage ou déroulage de laine minérale.
+### 1. Diagnostic préalable
+Notre façadier inspecte l'état du support : nature des matériaux, type de pathologies (fissures, décollements, mousses, efflorescences).
 
-**Technique du soufflage :**
-Un isolant en flocons (laine de verre, laine de roche ou ouate de cellulose) est projeté mécaniquement sur toute la surface du plancher. Cette technique permet de couvrir parfaitement tous les recoins et d'atteindre une épaisseur homogène.
+### 2. Préparation du support
+- Nettoyage haute pression
+- Traitement anti-mousse et anti-algues
+- Brossage et élimination des parties non adhérentes
+- Rebouchage des fissures et trous
 
-- Durée : 2 à 3 heures pour une maison standard
-- Épaisseur recommandée : 30 à 40 cm (R ≥ 7)
-- Coût moyen : 20 à 35 €/m²
+### 3. Application du revêtement
+Selon l'état et vos souhaits :
+- **Peinture de façade** : solution économique, large choix de couleurs
+- **Enduit monocouche** : protection durable, aspect traditionnel
+- **Enduit à la chaux** : pour les bâtis anciens, respirant
+- **RPE (Revêtement Plastique Épais)** : imperméabilisant, souple
 
-### Isolation des combles aménagés
+### 4. Finitions
+Traitement des points singuliers : encadrements de fenêtres, soubassements, corniches.
 
-Lorsque les combles sont habitables ou destinés à l'être, l'isolation se fait sous les rampants de toiture. Plusieurs techniques sont possibles :
+## Ravalement et isolation : le duo gagnant
 
-**Isolation par l'intérieur :**
-Pose de panneaux ou rouleaux d'isolant entre les chevrons, puis finition avec des plaques de plâtre. Solution économique mais qui réduit légèrement le volume habitable.
+Profitez du ravalement pour isoler par l'extérieur ! L'ITE transforme votre façade tout en améliorant drastiquement la performance énergétique. Les aides disponibles rendent cette option très attractive.
 
-**Isolation par l'extérieur (sarking) :**
-L'isolant est posé sur la charpente, sous la couverture. Cette technique préserve le volume intérieur et supprime tous les ponts thermiques. Plus coûteuse, elle est idéale lors d'une réfection de toiture.
+## Le coût d'un ravalement
 
-## Quel isolant choisir ?
+Les prix varient selon l'état du support et le revêtement choisi :
+- Nettoyage simple + peinture : 30 à 50 €/m²
+- Ravalement complet avec enduit : 50 à 80 €/m²
+- Ravalement + ITE : 120 à 200 €/m²
 
-| Isolant | Performance | Avantages | Prix |
-|---------|------------|-----------|------|
-| Laine de verre | R = 2,5/10 cm | Économique, bon rapport qualité-prix | € |
-| Laine de roche | R = 2,5/10 cm | Résistante au feu, bonne acoustique | €€ |
-| Ouate de cellulose | R = 2,5/10 cm | Écologique, bon confort d'été | €€ |
-| Polyuréthane | R = 4/10 cm | Très performant, faible épaisseur | €€€ |
+## Faites confiance à ISO Home Energy
 
-## Les aides pour l'isolation des combles
-
-L'isolation des combles bénéficie d'un financement avantageux :
-
-- **MaPrimeRénov'** : jusqu'à 25 €/m² selon revenus
-- **Prime CEE** : jusqu'à 12 €/m²
-- **TVA 5,5%** : applicable sur l'ensemble du devis
-- **Éco-PTZ** : pour financer le reste à charge
-
-Pour les ménages aux revenus modestes, le reste à charge peut être quasi nul grâce au cumul des aides.
-
-## Notre engagement qualité
-
-ISO Home Energy travaille exclusivement avec des isolants certifiés et des artisans qualifiés RGE. Nous garantissons une mise en œuvre conforme aux règles de l'art, avec une attention particulière portée à l'étanchéité à l'air et au traitement des ponts thermiques.
-
-Chaque chantier fait l'objet d'un contrôle qualité et vous recevez une attestation de fin de travaux indispensable pour l'obtention des aides.`,
-    date: '2024-01-05',
-    category: 'Isolation',
+Nos équipes réalisent des ravalements de qualité dans tout le Grand Est. Du diagnostic à la réception des travaux, nous assurons un suivi rigoureux pour un résultat impeccable et durable.`,
+    date: '2025-01-05',
+    category: 'Façade',
     author: 'ISO Home Energy',
-    readTime: '6 min',
-    image: '/images/blog/isolation-combles.webp',
+    readTime: '5 min',
+    image: '/images/blog/ravalement-facade.webp',
     seo: {
-      title: 'Isolation combles : économies, techniques et aides 2024',
+      title: 'Ravalement de façade : guide complet | Obligation et prix',
       description:
-        'Tout savoir sur l\'isolation des combles : techniques, isolants, prix et aides financières. Jusqu\'à 30% d\'économies sur votre facture de chauffage.',
+        'Tout savoir sur le ravalement de façade : obligation légale, techniques, prix et possibilité de combiner avec l\'isolation.',
       keywords: [
-        'isolation combles',
-        'isolation thermique',
-        'économies énergie',
-        'laine de verre',
-        'combles perdus',
+        'ravalement façade',
+        'rénovation façade',
+        'enduit façade',
+        'nettoyage façade',
+        'obligation ravalement',
       ],
     },
   },
   {
     id: '4',
-    slug: 'dpe-obligatoire-location',
-    title: 'DPE et location : ce qui change pour les propriétaires bailleurs',
+    slug: 'menuiseries-economies-energie',
+    title: 'Menuiseries et économies d\'énergie : bien choisir ses fenêtres',
     excerpt:
-      'Les passoires thermiques progressivement interdites à la location. Calendrier et solutions.',
-    content: `La loi Climat et Résilience impose un calendrier strict pour l'amélioration de la performance énergétique des logements mis en location. Les propriétaires bailleurs doivent anticiper ces échéances pour éviter de se retrouver dans l'impossibilité de louer leur bien.
+      'Les fenêtres peuvent représenter jusqu\'à 15% des déperditions thermiques. Comment bien les choisir ?',
+    content: `Le remplacement des menuiseries est un investissement rentable pour améliorer le confort et réduire les factures d'énergie. Fenêtres, portes et volets performants sont essentiels dans une démarche de rénovation énergétique globale.
 
-## Le calendrier des interdictions
+## L'impact des menuiseries sur la performance énergétique
 
-Le gouvernement a fixé des échéances progressives basées sur le classement DPE (Diagnostic de Performance Énergétique) :
+Des fenêtres anciennes ou en simple vitrage peuvent représenter 10 à 15% des déperditions thermiques d'un logement. Au-delà des pertes par le vitrage, les défauts d'étanchéité au niveau des joints et des ouvrants créent des courants d'air inconfortables.
 
-- **2025** : Interdiction de louer les logements classés G
-- **2028** : Interdiction étendue aux logements classés F
-- **2034** : Interdiction étendue aux logements classés E
+## Les critères de performance
 
-À ces dates, les logements concernés seront considérés comme "indécents" au sens de la loi et ne pourront plus faire l'objet d'un nouveau bail ni d'un renouvellement.
+### Le coefficient Uw
+Il mesure la déperdition thermique de la fenêtre (cadre + vitrage). Plus il est bas, meilleure est l'isolation. Pour bénéficier des aides, le Uw doit être ≤ 1,3 W/m².K.
 
-## Qu'est-ce qu'une passoire thermique ?
+### Le facteur solaire Sw
+Il indique la quantité de chaleur solaire transmise à travers le vitrage. Un Sw élevé est souhaitable au sud pour profiter des apports solaires gratuits en hiver.
 
-Un logement est qualifié de "passoire thermique" ou "passoire énergétique" lorsqu'il est classé F ou G sur le DPE. Cela correspond à une consommation énergétique supérieure à 330 kWh/m²/an.
+### L'affaiblissement acoustique
+Exprimé en décibels (dB), il mesure la capacité à réduire les bruits extérieurs. Important si vous êtes en zone bruyante.
 
-Ces logements présentent généralement :
-- Une isolation insuffisante ou inexistante
-- Des fenêtres simple vitrage
-- Un système de chauffage ancien et énergivore
-- Des problèmes d'étanchéité à l'air
+## PVC, aluminium ou bois ?
 
-## Les conséquences pour les propriétaires
+### Fenêtres PVC
+- **Avantages** : Excellent rapport qualité-prix, très bonne isolation, entretien minimal
+- **Inconvénients** : Choix de couleurs limité, moins durable que l'alu
+- **Prix** : 300 à 600 € par fenêtre
 
-### Gel des loyers
-Depuis août 2022, les propriétaires de logements classés F ou G ne peuvent plus augmenter le loyer, même lors d'un changement de locataire ou d'un renouvellement de bail.
+### Fenêtres aluminium
+- **Avantages** : Design moderne, profilés fins, large palette de couleurs, très durable
+- **Inconvénients** : Prix plus élevé, isolation légèrement inférieure (avec rupture de pont thermique)
+- **Prix** : 500 à 900 € par fenêtre
 
-### Interdiction de location
-À partir des dates mentionnées, le logement ne pourra plus être proposé à la location. Le propriétaire devra soit :
-- Réaliser des travaux de rénovation énergétique
-- Vendre le bien
-- Le retirer du marché locatif
+### Fenêtres bois
+- **Avantages** : Esthétique chaleureuse, excellente isolation, matériau écologique
+- **Inconvénients** : Entretien régulier (lasure tous les 5-10 ans)
+- **Prix** : 400 à 800 € par fenêtre
 
-### Dévalorisation du patrimoine
-Les passoires thermiques subissent déjà une décote significative sur le marché immobilier, pouvant atteindre 15 à 20% par rapport à un bien équivalent bien isolé.
+## Double ou triple vitrage ?
 
-## Les solutions de rénovation
+Le **double vitrage** (4/16/4 avec argon) offre d'excellentes performances pour la plupart des situations. Uw de 1,1 à 1,3.
 
-Pour sortir du statut de passoire thermique, plusieurs travaux sont à envisager :
+Le **triple vitrage** (4/12/4/12/4) est recommandé pour :
+- Les maisons passives ou BBC
+- Les régions très froides
+- Les orientations nord peu ensoleillées
 
-### 1. L'isolation thermique
-- Combles : gain de 1 à 2 classes DPE
-- Murs : gain de 1 à 2 classes DPE
-- Planchers bas : gain modéré mais complémentaire
+Il offre un Uw de 0,6 à 0,8 mais réduit les apports solaires.
 
-### 2. Le changement de chauffage
-Le remplacement d'une chaudière fioul ou gaz ancienne par une pompe à chaleur peut faire gagner 1 à 2 classes DPE.
+## Les aides disponibles
 
-### 3. La ventilation
-L'installation d'une VMC améliore la qualité de l'air et participe à l'efficacité énergétique globale.
+Le remplacement de fenêtres simple vitrage par du double vitrage performant est éligible aux aides :
+- **MaPrimeRénov'** : jusqu'à 100 € par fenêtre
+- **Prime CEE** : jusqu'à 50 € par fenêtre
+- **TVA 5,5%**
 
-### 4. Les menuiseries
-Le remplacement des fenêtres simple vitrage par du double ou triple vitrage améliore le confort et réduit les déperditions.
+## ISO Home Energy, votre menuisier de confiance
 
-## Les aides spécifiques aux bailleurs
-
-Les propriétaires bailleurs ont accès à des aides adaptées :
-
-- **MaPrimeRénov' Bailleurs** : montants identiques aux propriétaires occupants
-- **Loc'Avantages** : réduction d'impôt en contrepartie d'un loyer modéré
-- **Déficit foncier** : déduction des travaux des revenus fonciers
-- **Prime CEE** : accessible sans condition de statut
-
-## Anticipez avec ISO Home Energy
-
-N'attendez pas les échéances réglementaires pour agir. Plus vous anticipez, plus vous avez de choix dans les solutions et les artisans disponibles.
-
-Notre équipe réalise un audit énergétique complet de votre bien locatif et vous propose un plan de travaux hiérarchisé pour atteindre la classe énergétique souhaitée au meilleur coût.`,
-    date: '2024-01-02',
-    category: 'Réglementation',
+Nous proposons une gamme complète de menuiseries haute performance : fenêtres, portes-fenêtres, portes d'entrée, volets roulants. Nos poseurs expérimentés garantissent une installation soignée pour une étanchéité parfaite.`,
+    date: '2024-12-20',
+    category: 'Menuiserie',
     author: 'ISO Home Energy',
     readTime: '6 min',
-    image: '/images/blog/dpe-location.webp',
+    image: '/images/blog/menuiseries.webp',
     seo: {
-      title: 'DPE location 2024 : calendrier interdictions et solutions',
+      title: 'Fenêtres et économies d\'énergie | Guide menuiseries 2025',
       description:
-        'Passoires thermiques interdites à la location : calendrier 2025-2034, conséquences pour les bailleurs et solutions de rénovation énergétique.',
+        'Comment choisir ses fenêtres pour économiser l\'énergie ? PVC, alu, bois, double ou triple vitrage. Guide complet avec prix et aides.',
       keywords: [
-        'DPE location',
-        'passoire thermique',
-        'interdiction location',
-        'rénovation bailleur',
-        'loi climat',
+        'fenêtres PVC',
+        'menuiseries',
+        'double vitrage',
+        'isolation fenêtres',
+        'remplacement fenêtres',
       ],
     },
   },
   {
     id: '5',
-    slug: 'panneaux-solaires-autoconsommation',
-    title: 'Panneaux solaires : l\'autoconsommation, un investissement rentable',
+    slug: 'dpe-location-2025',
+    title: 'DPE et location : les échéances 2025 pour les propriétaires bailleurs',
     excerpt:
-      'Produire sa propre électricité avec le photovoltaïque : fonctionnement, rentabilité et aides.',
-    content: `Face à la hausse continue des prix de l'électricité, l'autoconsommation photovoltaïque séduit de plus en plus de particuliers. Produire sa propre électricité permet de réduire significativement sa facture tout en participant à la transition énergétique.
+      'Les logements classés G sont interdits à la location depuis janvier 2025. Que faire ?',
+    content: `Depuis le 1er janvier 2025, les logements classés G au DPE sont interdits à la location. Cette mesure impacte des milliers de propriétaires bailleurs qui doivent agir rapidement pour mettre leur bien en conformité.
 
-## Comment fonctionne l'autoconsommation ?
+## Le calendrier des interdictions
 
-L'autoconsommation consiste à consommer directement l'électricité produite par vos panneaux solaires. Le principe est simple :
+La loi Climat et Résilience impose un calendrier strict :
 
-1. Les panneaux captent l'énergie solaire et la convertissent en électricité
-2. Un onduleur transforme le courant continu en courant alternatif utilisable
-3. L'électricité alimente en priorité vos appareils en fonctionnement
-4. Le surplus est soit injecté sur le réseau (avec revente), soit stocké dans une batterie
+- **2025** : Interdiction des logements classés G
+- **2028** : Interdiction étendue aux logements classés F
+- **2034** : Interdiction étendue aux logements classés E
 
-En moyenne, un foyer autoconsomme entre 30 et 50% de sa production. Ce taux peut atteindre 70 à 80% avec une batterie de stockage.
+Les logements concernés sont considérés comme "indécents" et ne peuvent plus faire l'objet d'un nouveau bail.
 
-## Quelle rentabilité espérer ?
+## Qu'est-ce qu'une passoire thermique ?
 
-### Coût d'installation
-Pour une installation de 3 kWc (environ 8 panneaux), comptez entre 7 000 et 10 000 € TTC, aides déduites. Ce dimensionnement convient à la plupart des maisons individuelles.
+Un logement est qualifié de passoire thermique lorsqu'il est classé F ou G, soit une consommation supérieure à 330 kWh/m²/an. Ces logements présentent généralement :
+- Une isolation insuffisante
+- Des fenêtres simple vitrage
+- Un chauffage ancien et énergivore
 
-### Économies réalisées
-Avec un prix de l'électricité à 0,25 €/kWh, une installation de 3 kWc permet d'économiser environ 400 à 600 €/an en autoconsommation. La revente du surplus (à 0,13 €/kWh) génère un complément de 100 à 200 €/an.
+## Les conséquences pour les bailleurs
 
-### Temps de retour sur investissement
-En tenant compte des aides et de l'augmentation prévisible des tarifs de l'électricité, le temps de retour sur investissement se situe entre 8 et 12 ans. Les panneaux ayant une durée de vie de 25 à 30 ans, la rentabilité est assurée sur le long terme.
+### Gel des loyers
+Les propriétaires de logements F ou G ne peuvent plus augmenter les loyers.
 
-## Les aides à l'installation photovoltaïque
+### Interdiction de location
+Le logement ne peut plus être proposé à la location aux échéances mentionnées.
 
-### Prime à l'autoconsommation
-L'État verse une prime dégressive sur 5 ans pour les installations en autoconsommation avec vente du surplus :
-- Installation ≤ 3 kWc : 370 €/kWc
-- Installation de 3 à 9 kWc : 280 €/kWc
-- Installation de 9 à 36 kWc : 200 €/kWc
+### Dévalorisation du patrimoine
+Les passoires thermiques subissent une décote de 15 à 20% sur le marché immobilier.
 
-### Obligation d'achat
-EDF OA (Obligation d'Achat) rachète votre surplus de production à un tarif garanti pendant 20 ans.
+## Les solutions pour sortir de la passoire
 
-### TVA réduite
-Les installations de moins de 3 kWc bénéficient d'une TVA à 10% au lieu de 20%.
+### L'isolation thermique
+- **ITE** : gain de 2 à 3 classes DPE possible
+- **Combles** : gain de 1 à 2 classes
+- **Menuiseries** : amélioration du confort et des performances
 
-### Exonération d'impôt
-Les revenus de la vente d'électricité sont exonérés d'impôt pour les installations de moins de 3 kWc.
+### Le changement de chauffage
+Une pompe à chaleur peut faire gagner 1 à 2 classes DPE par rapport à un chauffage électrique ou une vieille chaudière.
 
-## Les critères d'une bonne installation
+### La rénovation globale
+Combiner plusieurs postes de travaux dans un parcours MaPrimeRénov' Ampleur permet d'atteindre les meilleures performances avec des aides maximisées.
 
-### L'orientation
-L'idéal est une orientation plein sud avec une inclinaison de 30 à 35°. Les orientations sud-est ou sud-ouest restent très performantes (90% du rendement optimal).
+## Les aides spécifiques aux bailleurs
 
-### L'absence d'ombrage
-Même partiel, l'ombrage réduit significativement la production. Attention aux arbres, cheminées et bâtiments voisins.
+- **MaPrimeRénov' Bailleurs** : mêmes montants que les propriétaires occupants
+- **Déficit foncier** : déduction des travaux des revenus fonciers
+- **Prime CEE** : accessible sans condition
 
-### La qualité du matériel
-Privilégiez des panneaux de marques reconnues (garantie 25 ans) et des onduleurs fiables (garantie 10 à 20 ans).
+## Agissez maintenant avec ISO Home Energy
 
-### L'installateur RGE
-Seule une installation réalisée par un professionnel QualiPV (RGE) ouvre droit aux aides et garantit une mise en œuvre dans les règles de l'art.
-
-## ISO Home Energy, votre partenaire photovoltaïque
-
-Notre équipe vous accompagne de l'étude de faisabilité à la mise en service :
-
-- Analyse de votre toiture et de votre consommation
-- Dimensionnement optimal de l'installation
-- Démarches administratives (mairie, Enedis, EDF OA)
-- Installation par artisans certifiés QualiPV
-- Suivi de production et maintenance
-
-Demandez votre étude gratuite et découvrez le potentiel solaire de votre toiture.`,
-    date: '2023-12-20',
-    category: 'Photovoltaïque',
+N'attendez pas les échéances pour agir. Notre équipe réalise un audit énergétique de votre bien locatif et propose un plan de travaux pour atteindre la classe énergétique souhaitée au meilleur coût.`,
+    date: '2025-01-08',
+    category: 'Réglementation',
     author: 'ISO Home Energy',
-    readTime: '7 min',
-    image: '/images/blog/panneaux-solaires.webp',
+    readTime: '5 min',
+    image: '/images/blog/dpe-2025.webp',
     seo: {
-      title: 'Panneaux solaires autoconsommation : rentabilité et aides 2024',
+      title: 'DPE location 2025 : interdiction logements G | Solutions',
       description:
-        'Installer des panneaux solaires en autoconsommation : fonctionnement, rentabilité, aides financières. Guide complet pour votre projet photovoltaïque.',
+        'Logements G interdits à la location en 2025. Calendrier, conséquences et solutions de rénovation pour les propriétaires bailleurs.',
       keywords: [
-        'panneaux solaires',
-        'autoconsommation',
-        'photovoltaïque',
-        'prime solaire',
-        'électricité verte',
+        'DPE location 2025',
+        'passoire thermique',
+        'interdiction location G',
+        'rénovation bailleur',
+        'classe énergétique',
       ],
     },
   },

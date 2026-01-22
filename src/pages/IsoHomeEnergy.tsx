@@ -137,8 +137,8 @@ export function IsoHomeEnergy() {
               className="relative"
             >
               <img
-                src="/images/about/team.webp"
-                alt="L'équipe ISO Home Energy - Experts en rénovation énergétique"
+                src="/images/about/artisan-work.webp"
+                alt="Artisan ISO Home Energy en intervention"
                 className="aspect-[6/5] w-full object-cover rounded-2xl shadow-lg"
               />
             </motion.div>
@@ -285,22 +285,22 @@ export function IsoHomeEnergy() {
                 Zone d'intervention
               </span>
               <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-6">
-                Présents sur l'ensemble du territoire français
+                Présents sur le Grand Est
               </h2>
               <div className="space-y-4 text-neutral-600">
                 <p>
-                  ISO Home Energy intervient dans toute la France métropolitaine grâce à
-                  son réseau d'artisans partenaires. Que vous soyez en zone urbaine ou rurale,
-                  nous avons les ressources pour mener à bien votre projet de rénovation.
+                  ISO Home Energy intervient sur l'ensemble de la région Grand Est grâce à
+                  son réseau d'artisans partenaires locaux. De l'Alsace à la Champagne-Ardenne,
+                  en passant par la Lorraine, nous avons les ressources pour mener à bien votre projet de rénovation.
                 </p>
                 <p>
-                  Notre organisation décentralisée nous permet de vous proposer des artisans
-                  locaux, connaissant les spécificités de votre région et les exigences
-                  climatiques locales.
+                  Notre implantation locale nous permet de vous proposer des artisans
+                  connaissant parfaitement les spécificités climatiques de la région et les
+                  exigences techniques propres au Grand Est.
                 </p>
               </div>
               <div className="mt-8 flex flex-wrap gap-3">
-                {['Île-de-France', 'Hauts-de-France', 'Grand Est', 'Normandie', 'Bretagne', 'Pays de la Loire', 'Nouvelle-Aquitaine', 'Occitanie', 'PACA', 'Auvergne-Rhône-Alpes'].map((region) => (
+                {['Alsace', 'Lorraine', 'Champagne-Ardenne'].map((region) => (
                   <span
                     key={region}
                     className="px-4 py-2 bg-white rounded-full text-sm text-primary border border-neutral-200"
@@ -319,7 +319,7 @@ export function IsoHomeEnergy() {
             >
               <img
                 src="/images/about/france-map.webp"
-                alt="Carte de France - Zones d'intervention ISO Home Energy"
+                alt="Carte du Grand Est - Zone d'intervention ISO Home Energy"
                 className="aspect-[6/5] w-full object-cover rounded-2xl shadow-lg"
               />
             </motion.div>

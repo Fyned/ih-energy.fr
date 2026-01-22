@@ -13,6 +13,7 @@ import { ActualitesIndex } from '@/pages/actualites'
 import { ArticleDetail } from '@/pages/actualites/ArticleDetail'
 import { MentionsLegales } from '@/pages/legal/MentionsLegales'
 import { Confidentialite } from '@/pages/legal/Confidentialite'
+import { Realisations } from '@/pages/Realisations'
 
 function App() {
   return (
@@ -36,6 +37,9 @@ function App() {
             {/* Actualites */}
             <Route path="/actualites" element={<ActualitesIndex />} />
             <Route path="/actualites/:slug" element={<ArticleDetail />} />
+
+            {/* Realisations */}
+            <Route path="/nos-realisations" element={<Realisations />} />
 
             {/* Legal */}
             <Route path="/mentions-legales" element={<MentionsLegales />} />

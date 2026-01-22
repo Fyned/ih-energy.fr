@@ -7,6 +7,8 @@ import {
   AidesGrid,
   CTASection,
   FAQ,
+  Partners,
+  SocialFollow,
 } from '@/components/sections'
 
 const processSteps = [
@@ -69,9 +71,9 @@ const faqItems = [
   },
   {
     id: '7',
-    title: 'Intervenez-vous dans toute la France ?',
+    title: 'Dans quelle zone intervenez-vous ?',
     content:
-      'Oui, ISO Home Energy dispose d\'un réseau d\'artisans partenaires couvrant l\'ensemble du territoire français métropolitain. Nous pouvons intervenir quelle que soit votre localisation, en zone urbaine comme en zone rurale.',
+      'ISO Home Energy intervient sur l\'ensemble de la région Grand Est : Alsace, Lorraine et Champagne-Ardenne. Notre réseau d\'artisans locaux certifiés RGE couvre toute la région, que vous soyez en zone urbaine ou rurale.',
   },
 ]
 
@@ -120,6 +122,8 @@ export function Home() {
 
       <WhyChooseUs />
 
+      <Partners />
+
       <AidesGrid
         subtitle="Financez vos travaux"
         title="Les aides à votre disposition"
@@ -146,6 +150,8 @@ export function Home() {
         description="Les réponses aux questions les plus posées par nos clients"
         items={faqItems}
       />
+
+      <SocialFollow />
     </>
   )
 }

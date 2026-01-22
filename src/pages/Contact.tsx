@@ -13,10 +13,10 @@ import { cn } from '@/utils/cn'
 const contactSchema = z.object({
   firstName: z.string().min(2, 'Prénom requis'),
   lastName: z.string().min(2, 'Nom requis'),
-  email: z.string().email('Email invalide'),
+  email: z.string().email('Email invalide').optional().or(z.literal('')),
   phone: z.string().min(10, 'Numéro de téléphone invalide'),
-  subject: z.string().min(1, 'Sujet requis'),
-  message: z.string().min(10, 'Message trop court'),
+  subject: z.string().optional(),
+  message: z.string().optional(),
   consent: z.boolean().refine((val) => val === true, {
     message: 'Vous devez accepter la politique de confidentialité',
   }),
@@ -216,7 +216,7 @@ export function Contact() {
                           htmlFor="email"
                           className="block text-sm font-medium text-primary mb-2"
                         >
-                          Email *
+                          Email <span className="text-neutral-400 font-normal">(facultatif)</span>
                         </label>
                         <input
                           type="email"
@@ -269,32 +269,24 @@ export function Contact() {
                         htmlFor="subject"
                         className="block text-sm font-medium text-primary mb-2"
                       >
-                        Sujet *
+                        Sujet <span className="text-neutral-400 font-normal">(facultatif)</span>
                       </label>
                       <select
                         id="subject"
                         {...register('subject')}
-                        className={cn(
-                          'w-full px-4 py-3 rounded-lg border bg-white transition-colors focus:outline-none focus:ring-2 focus:ring-accent/50',
-                          errors.subject
-                            ? 'border-red-500'
-                            : 'border-neutral-200 hover:border-neutral-300'
-                        )}
+                        className="w-full px-4 py-3 rounded-lg border bg-white transition-colors focus:outline-none focus:ring-2 focus:ring-accent/50 border-neutral-200 hover:border-neutral-300"
                       >
                         <option value="">Sélectionnez un sujet</option>
                         <option value="isolation">Isolation</option>
+                        <option value="ite">Isolation thermique par l'extérieur (ITE)</option>
+                        <option value="ravalement">Ravalement de façade</option>
                         <option value="chauffage">Chauffage / Pompe à chaleur</option>
-                        <option value="photovoltaique">Panneaux photovoltaïques</option>
+                        <option value="menuiserie">Menuiserie (fenêtres, portes, volets)</option>
                         <option value="chauffe-eau">Chauffe-eau thermodynamique</option>
                         <option value="vmc">VMC</option>
                         <option value="aides">Questions sur les aides</option>
                         <option value="autre">Autre</option>
                       </select>
-                      {errors.subject && (
-                        <p className="mt-1 text-sm text-red-500">
-                          {errors.subject.message}
-                        </p>
-                      )}
                     </div>
 
                     <div>
@@ -302,7 +294,7 @@ export function Contact() {
                         htmlFor="message"
                         className="block text-sm font-medium text-primary mb-2"
                       >
-                        Message *
+                        Message <span className="text-neutral-400 font-normal">(facultatif)</span>
                       </label>
                       <textarea
                         id="message"
@@ -316,11 +308,6 @@ export function Contact() {
                         )}
                         placeholder="Décrivez votre projet..."
                       />
-                      {errors.message && (
-                        <p className="mt-1 text-sm text-red-500">
-                          {errors.message.message}
-                        </p>
-                      )}
                     </div>
 
                     <div>

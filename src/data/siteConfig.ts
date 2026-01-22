@@ -10,8 +10,8 @@ export const siteConfig = {
     address: '', // A remplir par le client
   },
   social: {
-    facebook: '',
-    linkedin: '',
+    facebook: 'https://facebook.com/ihenergy',
+    linkedin: 'https://linkedin.com/company/ih-energy',
     instagram: '',
   },
 }

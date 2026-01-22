@@ -48,25 +48,37 @@ export const mainNavigation: NavCategory[] = [
         icon: 'home',
       },
       {
+        label: 'Isolation thermique par l\'extérieur',
+        href: '/nos-services/isolation-thermique-exterieur',
+        description: 'ITE : isolation et rénovation de façade en une seule intervention',
+        icon: 'home',
+      },
+      {
+        label: 'Ravalement de façade',
+        href: '/nos-services/ravalement-facade',
+        description: 'Nettoyage, réparation et embellissement de vos façades',
+        icon: 'building2',
+      },
+      {
         label: 'Solutions de chauffage',
         href: '/nos-services/chauffage',
         description: 'Pompes à chaleur et systèmes de chauffage nouvelle génération',
         icon: 'flame',
       },
       {
-        label: 'Panneau photovoltaïque',
-        href: '/nos-services/photovoltaique',
-        description: 'Installation solaire pour produire votre propre électricité',
-        icon: 'sun',
+        label: 'Menuiserie',
+        href: '/nos-services/menuiserie',
+        description: 'Fenêtres, portes et volets pour une isolation optimale',
+        icon: 'doorOpen',
       },
       {
-        label: 'Chauffe-eau thermodynamique haute performance',
+        label: 'Chauffe-eau thermodynamique',
         href: '/nos-services/chauffe-eau',
         description: 'Production d\'eau chaude économique et écologique',
         icon: 'droplets',
       },
       {
-        label: 'Ventilation mécanique contrôlée (VMC)',
+        label: 'VMC',
         href: '/nos-services/vmc',
         description: 'Système de ventilation pour un air intérieur sain',
         icon: 'wind',
@@ -120,6 +132,10 @@ export const mainNavigation: NavCategory[] = [
     ],
   },
   {
+    label: 'Réalisations',
+    href: '/nos-realisations',
+  },
+  {
     label: 'Actualités',
     href: '/actualites',
   },
@@ -132,8 +148,10 @@ export const mainNavigation: NavCategory[] = [
 export const footerNavigation = {
   services: [
     { label: 'Isolation des bâtiments', href: '/nos-services/isolation' },
+    { label: 'Isolation par l\'extérieur (ITE)', href: '/nos-services/isolation-thermique-exterieur' },
+    { label: 'Ravalement de façade', href: '/nos-services/ravalement-facade' },
     { label: 'Solutions de chauffage', href: '/nos-services/chauffage' },
-    { label: 'Panneau photovoltaïque', href: '/nos-services/photovoltaique' },
+    { label: 'Menuiserie', href: '/nos-services/menuiserie' },
     { label: 'Chauffe-eau thermodynamique', href: '/nos-services/chauffe-eau' },
     { label: 'VMC', href: '/nos-services/vmc' },
   ],
@@ -145,6 +163,7 @@ export const footerNavigation = {
   ],
   company: [
     { label: 'ISO Home Energy', href: '/iso-home-energy' },
+    { label: 'Nos réalisations', href: '/nos-realisations' },
     { label: 'Actualités', href: '/actualites' },
     { label: 'Contact', href: '/contact' },
   ],
@@ -153,3 +172,8 @@ export const footerNavigation = {
     { label: 'Politique de confidentialité', href: '/confidentialite' },
   ],
 }
+
+export const socialLinks = [
+  { name: 'LinkedIn', url: 'https://linkedin.com/company/ih-energy' },
+  { name: 'Facebook', url: 'https://facebook.com/ihenergy' },
+]
