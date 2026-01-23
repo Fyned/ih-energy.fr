@@ -68,15 +68,24 @@ export function Realisations() {
                 transition={{ delay: index * 0.1 }}
                 className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow border border-neutral-100"
               >
-                {/* Image Placeholder with Icon */}
-                <div className="aspect-[4/3] bg-gradient-to-br from-accent/20 to-primary/20 relative overflow-hidden">
-                  <div className="absolute inset-0 flex flex-col items-center justify-center">
-                    {(() => {
-                      const IconComponent = categoryIcons[project.category] || Home
-                      return <IconComponent className="w-16 h-16 text-accent/50 mb-2" />
-                    })()}
-                    <span className="text-neutral-500 text-xs">Photo à venir</span>
-                  </div>
+                {/* Project Image */}
+                <div className="aspect-[4/3] relative overflow-hidden">
+                  {project.images && project.images.length > 0 ? (
+                    <img
+                      src={project.images[0]}
+                      alt={project.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-gradient-to-br from-accent/20 to-primary/20 flex flex-col items-center justify-center">
+                      {(() => {
+                        const IconComponent = categoryIcons[project.category] || Home
+                        return <IconComponent className="w-16 h-16 text-accent/50 mb-2" />
+                      })()}
+                      <span className="text-neutral-500 text-xs">Photo à venir</span>
+                    </div>
+                  )}
                   <span className="absolute top-4 left-4 px-3 py-1 bg-accent text-white text-xs font-medium rounded-full">
                     {project.category}
                   </span>

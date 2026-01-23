@@ -58,14 +58,23 @@ export function ActualitesIndex() {
                   className="h-full group"
                   padding="none"
                 >
-                  {/* Article Image or Placeholder */}
-                  <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/10 rounded-t-2xl overflow-hidden relative">
-                    <div className="absolute inset-0 flex flex-col items-center justify-center">
-                      {(() => {
-                        const IconComponent = categoryIcons[article.category] || FileText
-                        return <IconComponent className="w-12 h-12 text-accent/40" />
-                      })()}
-                    </div>
+                  {/* Article Image */}
+                  <div className="aspect-video rounded-t-2xl overflow-hidden relative">
+                    {article.image ? (
+                      <img
+                        src={article.image}
+                        alt={article.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-gradient-to-br from-accent/20 to-primary/10 flex items-center justify-center">
+                        {(() => {
+                          const IconComponent = categoryIcons[article.category] || FileText
+                          return <IconComponent className="w-12 h-12 text-accent/40" />
+                        })()}
+                      </div>
+                    )}
                   </div>
 
                   <div className="p-6">
