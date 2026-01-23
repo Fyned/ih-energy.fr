@@ -1,19 +1,26 @@
 import { motion } from 'framer-motion'
-import { Linkedin, Facebook } from 'lucide-react'
+import { Linkedin, Facebook, Instagram } from 'lucide-react'
 import { Container } from '@/components/common'
+import { siteConfig } from '@/data/siteConfig'
 
 const socialLinks = [
   {
     name: 'LinkedIn',
-    url: 'https://linkedin.com/company/ih-energy',
+    url: siteConfig.social.linkedin,
     icon: Linkedin,
     color: 'hover:bg-[#0077b5]',
   },
   {
     name: 'Facebook',
-    url: 'https://facebook.com/ihenergy',
+    url: siteConfig.social.facebook,
     icon: Facebook,
     color: 'hover:bg-[#1877f2]',
+  },
+  {
+    name: 'Instagram',
+    url: siteConfig.social.instagram,
+    icon: Instagram,
+    color: 'hover:bg-[#E4405F]',
   },
 ]
 

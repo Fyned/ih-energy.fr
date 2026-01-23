@@ -81,15 +81,15 @@ export function Home() {
   return (
     <>
       <SEO
-        title="Rénovation énergétique | Isolation, Chauffage, Photovoltaïque"
-        description="ISO Home Energy, spécialiste de la rénovation énergétique en France. Isolation thermique, pompe à chaleur, panneaux solaires. Artisans RGE, aides MaPrimeRénov' et CEE déduites. Devis gratuit."
+        title="Rénovation énergétique Vosges & Grand Est | ITE, Ravalement, Isolation"
+        description="ISO Home Energy, spécialiste de la rénovation énergétique dans les Vosges et le Grand Est. ITE, ravalement de façade, isolation, chauffage. Artisans RGE locaux. Aides MaPrimeRénov' et CEE. Devis gratuit."
         canonical="/"
       />
 
       <Hero
-        badge="Spécialiste rénovation énergétique"
+        badge="Spécialiste rénovation énergétique - Vosges & Grand Est"
         title="Améliorez votre habitat, réduisez vos factures d'énergie"
-        description="ISO Home Energy vous accompagne dans vos projets d'isolation, de chauffage et d'énergie solaire. Bénéficiez des aides de l'État : MaPrimeRénov', CEE, TVA 5,5%. Artisans certifiés RGE, garantie décennale."
+        description="ISO Home Energy vous accompagne dans vos projets d'isolation thermique par l'extérieur (ITE), ravalement de façade et rénovation énergétique dans les Vosges et le Grand Est. Bénéficiez des aides de l'État : MaPrimeRénov', CEE, TVA 5,5%. Artisans certifiés RGE, garantie décennale."
         primaryCTA={{
           label: 'Demander un devis gratuit',
           href: '/contact',

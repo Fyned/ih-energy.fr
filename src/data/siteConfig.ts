@@ -10,9 +10,9 @@ export const siteConfig = {
     address: '', // A remplir par le client
   },
   social: {
-    facebook: 'https://facebook.com/ihenergy',
-    linkedin: 'https://linkedin.com/company/ih-energy',
-    instagram: '',
+    facebook: 'https://www.facebook.com/profile.php?id=61575389667483',
+    linkedin: 'https://www.linkedin.com/company/iso-home-energy/',
+    instagram: 'https://www.instagram.com/isohomenergy/',
   },
 }
 

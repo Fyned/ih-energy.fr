@@ -4,19 +4,19 @@ import { Container, SectionHeading } from '@/components/common'
 const partners = [
   {
     name: 'Esso',
-    logo: '/images/partners/esso.svg',
+    logo: '/images/partners/esso.webp',
   },
   {
     name: 'EDF',
-    logo: '/images/partners/edf.svg',
+    logo: '/images/partners/edf.webp',
   },
   {
-    name: 'Itech',
-    logo: '/images/partners/itech.svg',
+    name: 'ITE-K',
+    logo: '/images/partners/itek.webp',
   },
   {
     name: 'Gedimat',
-    logo: '/images/partners/gedimat.svg',
+    logo: '/images/partners/gedimat.webp',
   },
 ]
 

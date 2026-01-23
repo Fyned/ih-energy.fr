@@ -25,16 +25,16 @@ export function Realisations() {
   return (
     <>
       <SEO
-        title="Nos réalisations | Projets de rénovation énergétique"
-        description="Découvrez nos réalisations en rénovation énergétique dans le Grand Est : ITE, ravalement de façade, menuiseries, chauffage. Photos de nos projets."
+        title="Nos réalisations | ITE et ravalement Vosges & Grand Est"
+        description="Découvrez nos réalisations en ITE, ravalement de façade et rénovation énergétique dans les Vosges et le Grand Est : Strasbourg, Metz, Nancy, Épinal, Colmar. Photos de nos projets."
         canonical="/nos-realisations"
       />
 
       <Hero
         title="Nos réalisations"
-        description="Découvrez nos projets de rénovation énergétique réalisés dans le Grand Est. Isolation, ravalement, menuiseries, chauffage... Nos artisans RGE interviennent avec professionnalisme."
+        description="Découvrez nos projets de rénovation énergétique réalisés dans les Vosges et le Grand Est. ITE, ravalement de façade, menuiseries, chauffage... Nos artisans RGE locaux interviennent à Strasbourg, Metz, Nancy, Épinal, Colmar et dans toute la région."
         variant="centered"
-        badge="Portfolio"
+        badge="Portfolio - Vosges & Grand Est"
       />
 
       <section className="py-20 lg:py-28 bg-white">

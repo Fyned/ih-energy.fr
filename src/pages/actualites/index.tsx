@@ -25,16 +25,16 @@ export function ActualitesIndex() {
   return (
     <>
       <SEO
-        title="Actualités"
-        description="Suivez les dernières actualités de la rénovation énergétique : nouvelles aides, conseils pratiques, évolutions réglementaires."
+        title="Actualités | Rénovation énergétique Vosges & Grand Est"
+        description="Suivez les actualités de la rénovation énergétique dans les Vosges et le Grand Est : aides MaPrimeRénov' 2025, conseils ITE, ravalement de façade, évolutions réglementaires."
         canonical="/actualites"
       />
 
       <Hero
         title="Actualités"
-        description="Restez informé des dernières nouveautés en matière de rénovation énergétique, d'aides financières et de conseils pratiques."
+        description="Restez informé des dernières nouveautés en matière de rénovation énergétique, d'aides financières et de conseils pratiques pour les propriétaires des Vosges et du Grand Est."
         variant="centered"
-        badge="Blog"
+        badge="Blog - Vosges & Grand Est"
       />
 
       <section className="py-20 lg:py-28 bg-white">

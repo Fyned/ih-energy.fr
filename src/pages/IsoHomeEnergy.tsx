@@ -60,14 +60,14 @@ export function IsoHomeEnergy() {
   return (
     <>
       <SEO
-        title="ISO Home Energy | Spécialiste rénovation énergétique en France"
-        description="ISO Home Energy accompagne les particuliers dans leurs projets de rénovation énergétique : isolation, chauffage, photovoltaïque. Artisans RGE, aides déduites, devis gratuit."
+        title="ISO Home Energy | Spécialiste ITE et rénovation énergétique Vosges & Grand Est"
+        description="ISO Home Energy, votre expert en isolation thermique par l'extérieur (ITE) et ravalement de façade dans les Vosges et le Grand Est. Artisans RGE locaux, aides déduites, devis gratuit."
         canonical="/iso-home-energy"
       />
 
       <Hero
         title="Votre partenaire de confiance pour la rénovation énergétique"
-        description="ISO Home Energy accompagne les propriétaires français dans l'amélioration de la performance énergétique de leur habitat. Isolation, chauffage, ventilation, photovoltaïque : nous proposons des solutions complètes, réalisées par des artisans certifiés RGE."
+        description="Implantés dans les Vosges, nous accompagnons les propriétaires du Grand Est dans l'amélioration de la performance énergétique de leur habitat. ITE, ravalement de façade, menuiseries, chauffage : nous proposons des solutions complètes, réalisées par des artisans certifiés RGE."
         variant="centered"
         badge="Qui sommes-nous"
       />
@@ -285,22 +285,22 @@ export function IsoHomeEnergy() {
                 Zone d'intervention
               </span>
               <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-6">
-                Présents sur le Grand Est
+                Présents sur les Vosges et le Grand Est
               </h2>
               <div className="space-y-4 text-neutral-600">
                 <p>
-                  ISO Home Energy intervient sur l'ensemble de la région Grand Est grâce à
-                  son réseau d'artisans partenaires locaux. De l'Alsace à la Champagne-Ardenne,
-                  en passant par la Lorraine, nous avons les ressources pour mener à bien votre projet de rénovation.
+                  ISO Home Energy intervient sur l'ensemble des Vosges et de la région Grand Est grâce à
+                  son réseau d'artisans partenaires locaux. Des Vosges à l'Alsace, de la Lorraine à la Champagne-Ardenne,
+                  nous avons les ressources pour mener à bien votre projet de rénovation.
                 </p>
                 <p>
                   Notre implantation locale nous permet de vous proposer des artisans
                   connaissant parfaitement les spécificités climatiques de la région et les
-                  exigences techniques propres au Grand Est.
+                  exigences techniques propres au Grand Est. Nous sommes particulièrement spécialisés en <strong>isolation thermique par l'extérieur (ITE)</strong> et <strong>ravalement de façade</strong>.
                 </p>
               </div>
               <div className="mt-8 flex flex-wrap gap-3">
-                {['Alsace', 'Lorraine', 'Champagne-Ardenne'].map((region) => (
+                {['Vosges', 'Alsace', 'Lorraine', 'Champagne-Ardenne'].map((region) => (
                   <span
                     key={region}
                     className="px-4 py-2 bg-white rounded-full text-sm text-primary border border-neutral-200"
@@ -319,7 +319,7 @@ export function IsoHomeEnergy() {
             >
               <img
                 src="/images/about/france-map.webp"
-                alt="Carte du Grand Est - Zone d'intervention ISO Home Energy"
+                alt="Carte des Vosges et du Grand Est - Zone d'intervention ISO Home Energy"
                 className="aspect-[6/5] w-full object-cover rounded-2xl shadow-lg"
               />
             </motion.div>

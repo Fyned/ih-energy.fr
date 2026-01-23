@@ -53,14 +53,14 @@ export function Contact() {
   return (
     <>
       <SEO
-        title="Contact"
-        description="Contactez ISO Home Energy pour votre projet de rénovation énergétique. Devis gratuit et sans engagement. Nos experts vous accompagnent."
+        title="Contact | Devis gratuit ITE et rénovation Vosges & Grand Est"
+        description="Contactez ISO Home Energy pour votre projet de rénovation énergétique dans les Vosges et le Grand Est. Devis gratuit ITE, ravalement, isolation. Nos experts locaux vous accompagnent."
         canonical="/contact"
       />
 
       <Hero
         title="Contactez-nous"
-        description="Une question ? Un projet ? Notre équipe est à votre écoute pour vous accompagner dans votre rénovation énergétique."
+        description="Une question ? Un projet d'ITE ou de ravalement de façade dans les Vosges ou le Grand Est ? Notre équipe locale est à votre écoute pour vous accompagner dans votre rénovation énergétique."
         variant="centered"
       />
 

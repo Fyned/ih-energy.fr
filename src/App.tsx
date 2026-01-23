@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
 import { Layout } from '@/components/layout'
+import { ScrollToHash } from '@/components/common'
 
 import { Home } from '@/pages/Home'
 import { Contact } from '@/pages/Contact'
@@ -19,6 +20,7 @@ function App() {
   return (
     <HelmetProvider>
       <BrowserRouter>
+        <ScrollToHash />
         <Layout>
           <Routes>
             {/* Main Pages */}

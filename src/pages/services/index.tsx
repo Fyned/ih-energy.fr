@@ -5,16 +5,16 @@ export function ServicesIndex() {
   return (
     <>
       <SEO
-        title="Nos Services"
-        description="Découvrez nos services de rénovation énergétique : isolation, chauffage, photovoltaïque, chauffe-eau thermodynamique, VMC. Artisans certifiés RGE."
+        title="Nos Services | ITE, Ravalement, Isolation Vosges & Grand Est"
+        description="Découvrez nos services de rénovation énergétique dans les Vosges et le Grand Est : ITE, ravalement de façade, isolation, menuiserie, chauffage, VMC. Artisans RGE certifiés."
         canonical="/nos-services"
       />
 
       <Hero
         title="Nos services de rénovation énergétique"
-        description="Du diagnostic à la réalisation, nous vous accompagnons dans tous vos projets d'amélioration de la performance énergétique de votre habitat."
+        description="Du diagnostic à la réalisation, nous vous accompagnons dans tous vos projets d'amélioration de la performance énergétique de votre habitat dans les Vosges et le Grand Est. Spécialistes ITE et ravalement de façade."
         variant="centered"
-        badge="Nos expertises"
+        badge="Nos expertises - Vosges & Grand Est"
       />
 
       <ServiceCards

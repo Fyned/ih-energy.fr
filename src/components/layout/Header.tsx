@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Menu, X, Phone } from 'lucide-react'
+import { Menu, X, Phone, Linkedin, Facebook, Instagram } from 'lucide-react'
 import { AnimatePresence } from 'framer-motion'
 import { Container } from '@/components/common'
 import { mainNavigation } from '@/data/navigation'
@@ -39,14 +39,53 @@ export function Header() {
     >
       <Container>
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <Link to="/" className="flex-shrink-0">
-            <img
-              src="/header.svg"
-              alt={siteConfig.name}
-              className="h-12 w-auto"
-            />
-          </Link>
+          {/* Logo + Social Icons */}
+          <div className="flex items-center gap-4">
+            <Link to="/" className="flex-shrink-0">
+              <img
+                src="/header.svg"
+                alt={siteConfig.name}
+                className="h-12 w-auto"
+              />
+            </Link>
+
+            {/* Social Media Icons - Desktop */}
+            <div className="hidden md:flex items-center gap-2">
+              {siteConfig.social.linkedin && (
+                <a
+                  href={siteConfig.social.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 bg-neutral-100 rounded-full flex items-center justify-center text-primary hover:bg-accent hover:text-white transition-colors"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="w-4 h-4" />
+                </a>
+              )}
+              {siteConfig.social.facebook && (
+                <a
+                  href={siteConfig.social.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 bg-neutral-100 rounded-full flex items-center justify-center text-primary hover:bg-accent hover:text-white transition-colors"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="w-4 h-4" />
+                </a>
+              )}
+              {siteConfig.social.instagram && (
+                <a
+                  href={siteConfig.social.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 bg-neutral-100 rounded-full flex items-center justify-center text-primary hover:bg-accent hover:text-white transition-colors"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="w-4 h-4" />
+                </a>
+              )}
+            </div>
+          </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-1">
