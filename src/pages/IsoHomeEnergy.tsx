@@ -137,8 +137,8 @@ export function IsoHomeEnergy() {
               className="relative"
             >
               <img
-                src="/images/about/artisan-work.webp"
-                alt="Artisan ISO Home Energy en intervention"
+                src="/images/about/entreprise-engagee.webp"
+                alt="Artisan ISO Home Energy - Isolation thermique"
                 className="aspect-[6/5] w-full object-cover rounded-2xl shadow-lg"
               />
             </motion.div>
@@ -318,7 +318,7 @@ export function IsoHomeEnergy() {
               className="relative"
             >
               <img
-                src="/images/about/france-map.webp"
+                src="/images/about/grand-est-map.webp"
                 alt="Carte des Vosges et du Grand Est - Zone d'intervention ISO Home Energy"
                 className="aspect-[6/5] w-full object-cover rounded-2xl shadow-lg"
               />
