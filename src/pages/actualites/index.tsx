@@ -35,6 +35,7 @@ export function ActualitesIndex() {
         description="Restez informé des dernières nouveautés en matière de rénovation énergétique, d'aides financières et de conseils pratiques pour les propriétaires des Vosges et du Grand Est."
         variant="centered"
         badge="Blog - Vosges & Grand Est"
+        backgroundImage="/images/hero/blog-hero.webp"
       />
 
       <section className="py-20 lg:py-28 bg-white">

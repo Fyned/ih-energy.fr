@@ -17,6 +17,7 @@ interface HeroProps {
   }
   features?: string[]
   image?: string
+  backgroundImage?: string
   variant?: 'default' | 'centered' | 'split'
   dark?: boolean
   badge?: string
@@ -30,38 +31,56 @@ export function Hero({
   secondaryCTA,
   features,
   image,
+  backgroundImage,
   variant = 'default',
   dark = false,
   badge,
 }: HeroProps) {
   const isCentered = variant === 'centered'
+  const hasBackgroundImage = !!backgroundImage
+  const isDark = dark || hasBackgroundImage
 
   return (
     <section
       className={cn(
         'relative overflow-hidden',
-        dark
-          ? 'bg-gradient-to-br from-primary via-primary-light to-primary'
-          : 'bg-gradient-to-br from-neutral-50 via-white to-accent/5'
+        hasBackgroundImage
+          ? 'bg-primary'
+          : isDark
+            ? 'bg-gradient-to-br from-primary via-primary-light to-primary'
+            : 'bg-gradient-to-br from-neutral-50 via-white to-accent/5'
       )}
     >
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-30">
-        <div
-          className={cn(
-            'absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl',
-            dark ? 'bg-accent/20' : 'bg-accent/30'
-          )}
-        />
-        <div
-          className={cn(
-            'absolute bottom-0 left-0 w-96 h-96 rounded-full blur-3xl',
-            dark ? 'bg-accent/10' : 'bg-accent/20'
-          )}
-        />
-      </div>
+      {/* Background Image */}
+      {hasBackgroundImage && (
+        <>
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${backgroundImage})` }}
+          />
+          <div className="absolute inset-0 bg-primary/70" />
+        </>
+      )}
 
-      <Container className="relative">
+      {/* Background Pattern (only when no background image) */}
+      {!hasBackgroundImage && (
+        <div className="absolute inset-0 opacity-30">
+          <div
+            className={cn(
+              'absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl',
+              isDark ? 'bg-accent/20' : 'bg-accent/30'
+            )}
+          />
+          <div
+            className={cn(
+              'absolute bottom-0 left-0 w-96 h-96 rounded-full blur-3xl',
+              isDark ? 'bg-accent/10' : 'bg-accent/20'
+            )}
+          />
+        </div>
+      )}
+
+      <Container className="relative z-10">
         <div
           className={cn(
             'py-20 lg:py-32',
@@ -84,7 +103,7 @@ export function Hero({
                 transition={{ delay: 0.1 }}
                 className={cn(
                   'inline-block px-4 py-1.5 text-sm font-semibold rounded-full mb-6',
-                  dark
+                  isDark
                     ? 'bg-accent text-white'
                     : 'bg-accent/10 text-accent'
                 )}
@@ -100,7 +119,7 @@ export function Hero({
                 transition={{ delay: 0.2 }}
                 className={cn(
                   'text-sm font-semibold uppercase tracking-wider mb-4',
-                  dark ? 'text-accent' : 'text-accent'
+                  isDark ? 'text-accent' : 'text-accent'
                 )}
               >
                 {subtitle}
@@ -113,7 +132,7 @@ export function Hero({
               transition={{ delay: 0.2 }}
               className={cn(
                 'text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight',
-                dark ? 'text-white' : 'text-primary'
+                isDark ? 'text-white' : 'text-primary'
               )}
             >
               {title}
@@ -126,7 +145,7 @@ export function Hero({
                 transition={{ delay: 0.3 }}
                 className={cn(
                   'mt-6 text-lg lg:text-xl leading-relaxed',
-                  dark ? 'text-white/80' : 'text-neutral-600',
+                  isDark ? 'text-white/80' : 'text-neutral-600',
                   isCentered ? 'max-w-2xl mx-auto' : 'max-w-xl'
                 )}
               >
@@ -149,7 +168,7 @@ export function Hero({
                     key={index}
                     className={cn(
                       'flex items-center gap-3',
-                      dark ? 'text-white/90' : 'text-neutral-700'
+                      isDark ? 'text-white/90' : 'text-neutral-700'
                     )}
                   >
                     <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
@@ -178,7 +197,7 @@ export function Hero({
                 {secondaryCTA && (
                   <Button
                     to={secondaryCTA.href}
-                    variant={dark ? 'outline' : 'ghost'}
+                    variant={isDark ? 'outline' : 'ghost'}
                     size="lg"
                   >
                     {secondaryCTA.label}

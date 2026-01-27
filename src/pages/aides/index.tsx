@@ -42,6 +42,7 @@ export function AidesIndex() {
         description="De nombreuses aides existent pour financer vos travaux de rénovation énergétique. Découvrez les dispositifs auxquels vous avez droit et laissez-nous nous occuper des démarches."
         variant="centered"
         badge="Financez vos travaux"
+        backgroundImage="/images/hero/aides-hero.webp"
       />
 
       <AidesGrid

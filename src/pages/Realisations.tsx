@@ -35,6 +35,7 @@ export function Realisations() {
         description="Découvrez nos projets de rénovation énergétique réalisés dans les Vosges et le Grand Est. ITE, ravalement de façade, menuiseries, chauffage... Nos artisans RGE locaux interviennent à Strasbourg, Metz, Nancy, Épinal, Colmar et dans toute la région."
         variant="centered"
         badge="Portfolio - Vosges & Grand Est"
+        backgroundImage="/images/hero/realisations-hero.webp"
       />
 
       <section className="py-20 lg:py-28 bg-white">

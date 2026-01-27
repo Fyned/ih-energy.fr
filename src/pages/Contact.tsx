@@ -62,6 +62,7 @@ export function Contact() {
         title="Contactez-nous"
         description="Une question ? Un projet d'ITE ou de ravalement de façade dans les Vosges ou le Grand Est ? Notre équipe locale est à votre écoute pour vous accompagner dans votre rénovation énergétique."
         variant="centered"
+        backgroundImage="/images/hero/contact-hero.webp"
       />
 
       <section className="py-20 lg:py-28 bg-white">

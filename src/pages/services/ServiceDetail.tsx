@@ -42,6 +42,7 @@ export function ServiceDetail() {
         description={service.description}
         variant="centered"
         badge="Nos services"
+        backgroundImage={service.image}
         primaryCTA={{
           label: 'Demander un devis gratuit',
           href: '/contact',

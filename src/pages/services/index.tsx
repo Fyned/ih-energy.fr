@@ -15,6 +15,7 @@ export function ServicesIndex() {
         description="Du diagnostic à la réalisation, nous vous accompagnons dans tous vos projets d'amélioration de la performance énergétique de votre habitat dans les Vosges et le Grand Est. Spécialistes ITE et ravalement de façade."
         variant="centered"
         badge="Nos expertises - Vosges & Grand Est"
+        backgroundImage="/images/hero/services-hero.webp"
       />
 
       <ServiceCards

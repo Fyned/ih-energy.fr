@@ -42,6 +42,7 @@ export function AideDetail() {
         description={aide.description}
         variant="centered"
         badge="Les aides"
+        backgroundImage="/images/hero/aides-hero.webp"
         primaryCTA={{
           label: 'Vérifier mon éligibilité',
           href: '/contact',

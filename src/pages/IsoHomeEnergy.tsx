@@ -70,6 +70,7 @@ export function IsoHomeEnergy() {
         description="Implantés dans les Vosges, nous accompagnons les propriétaires du Grand Est dans l'amélioration de la performance énergétique de leur habitat. ITE, ravalement de façade, menuiseries, chauffage : nous proposons des solutions complètes, réalisées par des artisans certifiés RGE."
         variant="centered"
         badge="Qui sommes-nous"
+        backgroundImage="/images/hero/company-hero.webp"
       />
 
       {/* Stats Section */}
