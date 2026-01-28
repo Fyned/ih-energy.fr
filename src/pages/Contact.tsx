@@ -4,11 +4,16 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { motion } from 'framer-motion'
 import { Phone, Mail, MapPin, Send, CheckCircle } from 'lucide-react'
+import emailjs from '@emailjs/browser'
 import { SEO } from '@/components/seo'
 import { Container, Button } from '@/components/common'
 import { Hero } from '@/components/sections'
 import { siteConfig } from '@/data/siteConfig'
 import { cn } from '@/utils/cn'
+
+const EMAILJS_SERVICE_ID = 'contact@ih-energy.fr'
+const EMAILJS_TEMPLATE_ID = 'contact@ih-energy.fr'
+const EMAILJS_PUBLIC_KEY = 'jfT5o5Kxx13scFGB2'
 
 const contactSchema = z.object({
   firstName: z.string().min(2, 'Prénom requis'),
@@ -39,15 +44,30 @@ export function Contact() {
 
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true)
-    // TODO: Integrate EmailJS here
-    console.log('Form data:', data)
 
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1000))
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          firstName: data.firstName,
+          lastName: data.lastName,
+          email: data.email || 'Non renseigné',
+          phone: data.phone,
+          subject: data.subject || 'Non renseigné',
+          message: data.message || 'Pas de message',
+        },
+        EMAILJS_PUBLIC_KEY
+      )
 
-    setIsSubmitting(false)
-    setIsSubmitted(true)
-    reset()
+      setIsSubmitted(true)
+      reset()
+    } catch (error) {
+      console.error('EmailJS Error:', error)
+      alert('Une erreur est survenue. Veuillez réessayer ou nous contacter par téléphone.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
