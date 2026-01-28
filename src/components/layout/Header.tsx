@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Menu, X, Phone, ChevronDown } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { Container } from '@/components/common'
 import { mainNavigation } from '@/data/navigation'
 import { siteConfig } from '@/data/siteConfig'
 import { cn } from '@/utils/cn'
@@ -38,9 +37,9 @@ export function Header() {
       )}
     >
       {/* Main Header */}
-      <Container>
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Logo */}
+          {/* Logo - Sol kenar */}
           <Link to="/" className="flex-shrink-0">
             <img
               src="/header.svg"
@@ -49,49 +48,51 @@ export function Header() {
             />
           </Link>
 
-          {/* Desktop Navigation - Centered */}
-          <nav className="hidden lg:flex items-center">
-            {mainNavigation.map((item) => (
-              <div
-                key={item.label}
-                className="relative"
-                onMouseEnter={() => item.items && setActiveMenu(item.label)}
-                onMouseLeave={() => setActiveMenu(null)}
-              >
-                <Link
-                  to={item.href || '#'}
-                  className={cn(
-                    'flex items-center gap-1 px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200',
-                    activeMenu === item.label || location.pathname.startsWith(item.href || '')
-                      ? 'text-accent'
-                      : 'text-primary hover:text-accent'
-                  )}
+          {/* Desktop Navigation - Orta */}
+          <nav className="hidden lg:flex items-center justify-center flex-1 mx-8">
+            <div className="flex items-center gap-1">
+              {mainNavigation.map((item) => (
+                <div
+                  key={item.label}
+                  className="relative"
+                  onMouseEnter={() => item.items && setActiveMenu(item.label)}
+                  onMouseLeave={() => setActiveMenu(null)}
                 >
-                  {item.label}
-                  {item.items && (
-                    <motion.span
-                      animate={{ rotate: activeMenu === item.label ? 180 : 0 }}
-                      transition={{ duration: 0.2 }}
-                    >
-                      <ChevronDown className="w-4 h-4" />
-                    </motion.span>
-                  )}
-                </Link>
+                  <Link
+                    to={item.href || '#'}
+                    className={cn(
+                      'flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-all duration-200 whitespace-nowrap',
+                      activeMenu === item.label || location.pathname.startsWith(item.href || '')
+                        ? 'text-accent'
+                        : 'text-primary hover:text-accent'
+                    )}
+                  >
+                    {item.label}
+                    {item.items && (
+                      <motion.span
+                        animate={{ rotate: activeMenu === item.label ? 180 : 0 }}
+                        transition={{ duration: 0.2 }}
+                      >
+                        <ChevronDown className="w-4 h-4" />
+                      </motion.span>
+                    )}
+                  </Link>
 
-                {/* Mega Menu */}
-                <AnimatePresence>
-                  {item.items && activeMenu === item.label && (
-                    <MegaMenu items={item.items} category={item.label} />
-                  )}
-                </AnimatePresence>
-              </div>
-            ))}
+                  {/* Mega Menu */}
+                  <AnimatePresence>
+                    {item.items && activeMenu === item.label && (
+                      <MegaMenu items={item.items} category={item.label} />
+                    )}
+                  </AnimatePresence>
+                </div>
+              ))}
+            </div>
           </nav>
 
-          {/* Right Side - Social Icons + CTA Button - Desktop */}
-          <div className="hidden lg:flex items-center gap-4">
+          {/* Right Side - Social Icons + CTA Button - Sağ kenar */}
+          <div className="hidden lg:flex items-center gap-3 flex-shrink-0">
             {/* Social Icons */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1.5">
               {siteConfig.social.linkedin && (
                 <a
                   href={siteConfig.social.linkedin}
@@ -136,7 +137,7 @@ export function Header() {
             {/* CTA Button */}
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 px-6 py-2.5 bg-accent text-white text-sm font-semibold rounded-lg hover:bg-accent-dark transition-all duration-300 shadow-lg shadow-accent/25 hover:shadow-xl hover:shadow-accent/30 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-accent text-white text-sm font-semibold rounded-lg hover:bg-accent-dark transition-all duration-300 shadow-md shadow-accent/20 hover:shadow-lg hover:shadow-accent/30"
             >
               <Phone className="w-4 h-4" />
               Devis gratuit
@@ -170,7 +171,7 @@ export function Header() {
             </button>
           </div>
         </div>
-      </Container>
+      </div>
 
       {/* Mobile Menu */}
       <AnimatePresence>
