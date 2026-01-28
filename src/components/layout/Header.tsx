@@ -37,9 +37,9 @@ export function Header() {
       )}
     >
       {/* Main Header */}
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Logo - Sol kenar */}
+      <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
+        <div className="grid grid-cols-[auto_1fr_auto] items-center h-16 lg:h-20 gap-4">
+          {/* Logo - Sol */}
           <Link to="/" className="flex-shrink-0">
             <img
               src="/header.svg"
@@ -48,9 +48,9 @@ export function Header() {
             />
           </Link>
 
-          {/* Desktop Navigation - Orta */}
-          <nav className="hidden lg:flex items-center justify-center flex-1 mx-8">
-            <div className="flex items-center gap-1">
+          {/* Desktop Navigation - Tam Orta */}
+          <nav className="hidden lg:flex items-center justify-center">
+            <div className="flex items-center gap-0.5">
               {mainNavigation.map((item) => (
                 <div
                   key={item.label}
@@ -61,7 +61,7 @@ export function Header() {
                   <Link
                     to={item.href || '#'}
                     className={cn(
-                      'flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-all duration-200 whitespace-nowrap',
+                      'flex items-center gap-1 px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 whitespace-nowrap',
                       activeMenu === item.label || location.pathname.startsWith(item.href || '')
                         ? 'text-accent'
                         : 'text-primary hover:text-accent'
@@ -89,8 +89,8 @@ export function Header() {
             </div>
           </nav>
 
-          {/* Right Side - Social Icons + CTA Button - Sağ kenar */}
-          <div className="hidden lg:flex items-center gap-3 flex-shrink-0">
+          {/* Right Side - Social Icons + CTA Button - Sağ */}
+          <div className="hidden lg:flex items-center gap-3 justify-end">
             {/* Social Icons */}
             <div className="flex items-center gap-1.5">
               {siteConfig.social.linkedin && (
